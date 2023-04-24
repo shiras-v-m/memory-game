@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"
+    integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
+</head>
+<body>
+  <audio id="music" src="sound-effects/background.wav" autoplay="autoplay"  autostart="true"></audio>
+    <section>
+        
+        <div class="container"> 
+          <div id="animation" class="svg"> 
+            <script>
+                var animation = bodymovin.loadAnimation(
+                    {
+                        container: document.getElementById('animation'),
+                        // path:'https://assets4.lottiefiles.com/private_files/lf30_obidsi0t.json',
+                        path: 'https://assets4.lottiefiles.com/packages/lf20_xudbbfnj.json',
+                        render: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: 'developer skills animation'
+                    }
+                );
+            </script>
+            </div>
+          <div class="text-animation">
+           
+            <div class="text-wrapper">
+              
+              <h2>Memory Game</h2>
+              <h2>Memory Game</h2>
+            </div>
+            <a href="play.html" class="playIcon">
+                <div  class="circle">
+                 <span class="triangle">▲</span>
+                </div>
+              </a>
+          </div>
+          
+          <div class="waveDiv animation-wave">
+            <div class="wave-content-wrapper first-wave">
+              <div class="wave-image first-image" style="background-image: url('https://www.yudiz.com/codepen/wave-animation/first-wave.png')"></div>
+            </div>
+            <div class="wave-content-wrapper second-wave">
+              <div class="wave-image second-image" style="background-image: url('https://www.yudiz.com/codepen/wave-animation/second-wave.png')"></div>
+            </div>
+            <div class="wave-content-wrapper third-wave">
+              <div class="wave-image third-image" style="background-image: url('https://www.yudiz.com/codepen/wave-animation/third-wave.png')"></div>
+            </div>
+          </div>
+          
+
+            	<!-- bird begins -->
+	<div class="bird-container bird-container--one">
+		<div class="bird birdOne"></div>
+	</div>
+	
+	<div class="bird-container bird-container--two">
+		<div class="bird bird--two"></div>
+	</div>
+	
+	<div class="bird-container bird-container--three">
+		<div class="bird bird--three"></div>
+	</div>
+	
+	<div class="bird-container bird-container--four">
+		<div class="bird bird--four"></div>
+	</div>
+	<!-- bird ends -->
+        </div>
+      
+      </section>
+      
+</body>
+</html>
